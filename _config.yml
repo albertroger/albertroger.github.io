@@ -121,6 +121,8 @@ menu:
   #about: /about/
   archives: /archives/
   tags: /tags/
+  categories: /categories
+  about: /about
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
