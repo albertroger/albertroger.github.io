@@ -27,14 +27,14 @@ date: 2018-06-06 00:38:00
 
 &emsp;采用的大体结构如下：
 
-![流程图](/Users/asotree/Documents/GitHub/albertroger.github.io/pic/DL-Traffic-Router/DL流程.png)
+![流程图](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/DL流程.png)
 &emsp;如图，系统的输入为Traffic-Pattern，而输出为Router-path；其网络的具体结构如下：
-![网络结构](/Users/asotree/Documents/GitHub/albertroger.github.io/pic/DL-Traffic-Router/DL网络结构.png)
+![网络结构](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/DL网络结构.png)
 &emsp;其中，输入层共有$N$个神经元，$N$代表的是目标网络的路由数量,用一个向量来表示$\lbrace x_1 , x_2, \cdots, x_N \rbrace$,其中，$x_i$表示在规定时隙内，第i个路由的入包；
 
 &emsp;输出为下一条的路由，也是用一个向量表示$\lbrace y_1,y_2,\cdots, y_N \rbrace$,其中，$y_i$的取值为0或1。在确定以怎样的输入和输出来搭建网络的过程中，文章设N为16进行了多次对比；
 
-![table](/Users/asotree/Documents/GitHub/albertroger.github.io/pic/DL-Traffic-Router/DL网络输入输出.png)
+![table](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/DL网络输入输出.png)
 
 ## 训练
 
@@ -68,7 +68,7 @@ date: 2018-06-06 00:38:00
 ### 预测：
 &emsp;使用下图来具体说明：
 
-![示例](/Users/asotree/Documents/GitHub/albertroger.github.io/pic/DL-Traffic-Router/测试示例.png)
+![示例](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/测试示例.png)
 - 使用$D_{ij}$来表示路由i到路由j的网络，而$W_{ij}$则表示其权重；
 - 当$R_2$要向$R_{12}$发送数据包时，使用输入$x$和$D_{2,12}$$W_{2,12}$,来预测下一跳路由；
 - 得到下一跳路由之后，以此类推，直到到达目的节点[^5]；
@@ -77,23 +77,23 @@ date: 2018-06-06 00:38:00
 &emsp;模拟网络有16个路由器，并假设只有边界路由产生数据，内部路由只是转发数据，带宽为$8Mb/s$，每个节点的buffer大小不设限，总数据包生成速率为$16.32Mb/s$:
 
 - 不同DL网络结构的性能对比：
-  ![网络对比](/Users/asotree/Documents/GitHub/albertroger.github.io/pic/DL-Traffic-Router/DL网络结构测试.png)
+  ![网络对比](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/DL网络结构测试.png)
   &emsp;从图中可以看出，当每层的神经元个数确定后，层数越多MSE越大且每层的神经元个数为16 与18差不多；考虑到参数矩阵的大小及训练速度，最终选择了4层，每层16个unit；
 
 - 吞吐量测试：
 
-![吞吐量测试](/Users/asotree/Documents/GitHub/albertroger.github.io/pic/DL-Traffic-Router/DL吞吐量测试.png)
+![吞吐量测试](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/DL吞吐量测试.png)
 &emsp;对比了传统OSPF和DL-Traffic-Router的吞吐量:
 
 &emsp;其中，DL-Traffic-Router的总吞吐量达到了$16.13Mb/s$左右，而总的发包速率为$16.3Mb/s$，因为DL方法得到路径的速度快，可以一定程度上避免拥塞和丢包[^6]
 - 平均每跳时延测试：
-![平均每条时延测试](/Users/asotree/Documents/GitHub/albertroger.github.io/pic/DL-Traffic-Router/DL每跳时延测试.png)
+![平均每条时延测试](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/DL每跳时延测试.png)
 
 &emsp;对比了传统OSPF和DL-Traffic-Router之间的每一跳时延；DL方法明显优于OSPF，因为DL的寻找路径更快；
 
 - 信令开销：
 
-  ![信令开销对比](/Users/asotree/Documents/GitHub/albertroger.github.io/pic/DL-Traffic-Router/DL信令测试.png)
+  ![信令开销对比](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/DL信令测试.png)
 &emsp;对比了OSPF和DL-Traffic-Router之间的信令开销；可以看出DL方法远低于OSPF，这是因为，**<u>还不懂</u>**
 
 ## 一点想法：
