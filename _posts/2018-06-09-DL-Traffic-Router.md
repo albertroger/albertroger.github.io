@@ -25,7 +25,7 @@ categories:
 
 &emsp;采用的大体结构如下：
 
-![流程图](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/DL流程.png)
+![流程图](https://github.com/albertroger/albertroger.github.io/blob/master/pic/DL-Traffic-Router/DL网络结构.png)
 &emsp;如图，系统的输入为Traffic-Pattern，而输出为Router-path；其网络的具体结构如下：
 ![网络结构](https://github.com/albertroger/albertroger.github.io/tree/master/pic/DL-Traffic-Router/DL网络结构.png)
 &emsp;其中，输入层共有$N$个神经元，$N$代表的是目标网络的路由数量,用一个向量来表示$\lbrace x_1 , x_2, \cdots, x_N \rbrace$,其中，$x_i$表示在规定时隙内，第i个路由的入包；
