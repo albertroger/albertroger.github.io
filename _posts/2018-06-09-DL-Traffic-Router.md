@@ -1,13 +1,11 @@
 ---
-title:THE DEEP LEARNING VISION FOR HETEROGENEOUS NETWORK TRAFFIC CONTROL: PROPOSAL, CHALLENGES, AND FUTURE PERSPECTIVE
-
-description:在网络路由问题上，首次引入Deep Learning
-
-categories:
- - tutorial
-
+title: THE DEEP LEARNING VISION FOR HETEROGENEOUS NETWORK TRAFFIC CONTROL: PROPOSAL, CHALLENGES, AND FUTURE PERSPECTIVE
 date: 2018-06-06 00:38:00
+tags:
+categories:
+ -tutorial
 ---
+
 ## 背景：
 
 &emsp;&emsp;网络流量控制是当今以移动为中心的异构网络的重要组成部分，随着物联网的不断发展，为用户提供各种服务和体验。
