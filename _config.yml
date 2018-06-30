@@ -4,7 +4,7 @@
 # ---------------------------------------------------------------
 
 # Site
-title: New-Tree
+title: AsoTree
 subtitle:
 description: 一棵树
 author: Trees
@@ -152,9 +152,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -167,6 +167,27 @@ scheme: Muse
 # ---------------------------------------------------------------
 font:
   enable: true
+  
+  global:
+    external:true
+    family:Monda
+  
+  headings:
+    external:true
+    family:Roboto Slab
+
+  posts:
+    external:true
+    family:
+
+  logo:
+    external:true
+    family:Lobster Two
+    size:24
+
+  codes:
+    external:true
+    family:PT Mono
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
   host:
@@ -367,9 +388,9 @@ highlight_theme: normal
 
 # MathJax Support
 mathjax:
-  enable: false
-  per_page: false
-  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+  enable: true
+  per_page: true
+  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
 han: false
@@ -621,7 +642,7 @@ pace_theme: pace-theme-minimal
 canvas_nest: false
 
 # three_waves
-three_waves: false
+three_waves: true
 
 # canvas_lines
 canvas_lines: false
