@@ -5,7 +5,9 @@ tags:
 categories:
  -tutorial
 ---
-
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 ## 背景：
 
 &emsp;&emsp;网络流量控制是当今以移动为中心的异构网络的重要组成部分，随着物联网的不断发展，为用户提供各种服务和体验。
