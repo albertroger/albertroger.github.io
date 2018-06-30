@@ -169,25 +169,25 @@ font:
   enable: true
   
   global:
-    external:true
-    family:Monda
+    external: true
+    family: Monda
   
   headings:
-    external:true
-    family:Roboto Slab
+    external: true
+    family: Roboto Slab
 
   posts:
-    external:true
+    external: true
     family:
 
   logo:
-    external:true
-    family:Lobster Two
-    size:24
+    external: true
+    family: Lobster Two
+    size: 24
 
   codes:
-    external:true
-    family:PT Mono
+    external: true
+    family: PT Mono
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
   host:
@@ -231,8 +231,8 @@ font:
 # Sidebar Settings
 # ---------------------------------------------------------------
 sidebar:
-  position:left
-  display:post
+  position: left
+  display: post
 
 # Social Links
 # Key is the link label showing to end users.
@@ -597,12 +597,6 @@ local_search:
 # Usage: {% exturl text url "title" %}
 # Alias: {% extlink text url "title" %}
 exturl: false
-
-# MathJax Support
-mathjax:
-  enable:true
-  per_page:false
-  cdn://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
 
