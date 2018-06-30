@@ -209,7 +209,9 @@ font:
 # ---------------------------------------------------------------
 # Sidebar Settings
 # ---------------------------------------------------------------
-
+sidebar:
+  position:left
+  display:post
 
 # Social Links
 # Key is the link label showing to end users.
@@ -268,6 +270,8 @@ sidebar:
   #display: post
   #display: always
   display: hide
+  #display: remove
+
   #display: remove
 
   # Sidebar offset from top menubar in pixels.
@@ -573,6 +577,14 @@ local_search:
 # Alias: {% extlink text url "title" %}
 exturl: false
 
+# MathJax Support
+mathjax:
+  enable:true
+  per_page:false
+  cdn://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+
+
 
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
@@ -709,5 +721,3 @@ css: assets/css
 js: assets/js
 images: assets/images
 
-# Theme version
-version: 5.1.1
